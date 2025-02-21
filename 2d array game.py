@@ -9,7 +9,8 @@ my_array[cor_x,cor_y] = 1
 correct = False
 guesses = 0
 max_attempts = 10
-
+print(f"Length of grid is {l}")
+print(f"Width of grid is {w}")
 while correct is False:
     my_guess = input("Guess the row position of the treasure: ")
     if(int(my_guess) < cor_y):
