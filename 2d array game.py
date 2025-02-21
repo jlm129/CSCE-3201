@@ -1,7 +1,7 @@
 import numpy as np
 import random
-l = 10
-w = 10
+l = random.randint(5, 50)
+w = random.randint(5, 50)
 my_array = np.zeros((w,l))
 cor_x = random.randint(0, w-1)
 cor_y = random.randint(0, l-1)
@@ -23,6 +23,8 @@ while correct is False:
         correct = True
     if(guesses> max_attempts):
         print(f"Too many incorrect guesses the location was {cor_x, cor_y}")
+        print("Better luck next time")
+
 
 correct = False
 
@@ -36,7 +38,8 @@ while correct is False:
         guesses = guesses + 1
         print(f"You guessed too high for the col position, try again, {guesses} used!")
     else:
-        print(f"You guessed correctly, {guesses} attempt used")
+        print(f"You guessed correctly, {guesses} attempt used1")
         correct = True
     if(guesses>max_attempts):
         print(f"Too many incorrect guesses the location was {cor_x, cor_y}")
+        print("Better luck next time")
