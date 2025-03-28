@@ -25,10 +25,10 @@ y = y["G3"].astype(float).values.ravel()
 # variable information
 #print(student_performance.variables)
 
-X, y = shuffle(X, y, random_state=7)
+X, y = shuffle(X, y, random_state=320)
 
 # Split the dataset into training (80%) and testing (20%)
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=7)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=320)
 
 y_train = y_train.ravel()
 
