@@ -21,9 +21,9 @@ y = y["G3"].astype(float).values.ravel()
 
 
 # metadata
-#print(student_performance.metadata)
+print(student_performance.metadata)
 # variable information
-#print(student_performance.variables)
+print(student_performance.variables)
 
 X, y = shuffle(X, y, random_state=320)
 
