@@ -43,9 +43,9 @@ y_test_pred = sv_regressor.predict(X_test)
 
 # Evaluate the performance of the regressor and print the initial metrics.
 mse = mean_squared_error(y_test, y_test_pred)
-ev_score = explained_variance_score(y_test, y_test_pred)
-print(f"Mean Squared Error: {mse:.2f}")
-print(f"Explained Variance Score: {ev_score:.2f}")
+score = explained_variance_score(y_test, y_test_pred)
+print(f"Mean Squared Error: {mse}")
+print(f"Explained Variance Score: {score}")
 
 # binarize the predicted values & the actual values using threshold of 12.0.
 y_pred_label = (y_test_pred >= 12.0).astype(int)
